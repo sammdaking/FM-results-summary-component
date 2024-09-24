@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Hanken", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  background-color: hsla(0, 2%, 92%, 0.896);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result h2 {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 70%;
+  background-color: white;
+  border-radius: 1rem;
+}
+.result {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: hsl(252, 83%, 58%);
+}
+.result > p {
+  padding: 20px;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: rgba(240, 255, 255, 0.598);
+}
+#center {
+  text-align: center;
+}
+.circle {
+  height: 50%;
+  width: 50%;
+  min-height: 120px;
+  overflow: hidden;
+  border-radius: 200rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(93, 46, 222);
+  flex-direction: column;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.circle p span {
+  color: rgb(203, 200, 197);
+  display: block;
+  font-size: 18px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  height: 100%;
+  width: 60%;
+}
+#sum {
+  margin: 30px 0px 20px 30px;
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+.title-memory,
+.title-visual,
+.title-verbal,
+.title-reaction {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 250, 230);
+  margin: 10px 30px 10px 30px;
+  color: rgb(215, 68, 68);
+  font-size: 20px;
+  padding: 15px;
+}
+.title-reaction p {
+  margin-right: auto;
+}
+h6 {
+  color: rgb(193, 184, 184);
+  font-size: 20px;
+}
+.title-reaction {
+  background-color: rgb(249, 228, 189);
+}
+.title-memory {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  background-color: rgb(250, 250, 237);
+  font-size: 20px;
+  padding: 15px;
+  color: rgb(206, 145, 53);
+}
+span {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.title-memory p {
+  margin-right: auto;
+}
+.title-verbal {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  background-color: rgb(223, 248, 239);
+  font-size: 20px;
+  padding: 15px;
+  color: rgb(6, 222, 124);
+}
+.title-verbal p {
+  margin-right: auto;
+}
+.title-visual {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  font-size: 20px;
+  padding: 15px;
+  background-color: rgb(242, 242, 251);
+  color: rgb(11, 11, 230);
+}
+.title-visual p {
+  margin-right: auto;
+}
+.btn-continue {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(84, 75, 106);
+  color: white;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 30px;
+  font-size: 22px;
+}
+.attribution {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: rgb(49, 73, 1);
+}
+img {
+  margin-right: 0.7rem;
+}
+@media (max-width: 425px) {
+  :root {
+    font-size: 14px;
+  }
+  body {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: scroll;
+  }
+  .summary,
+  .right-side,
+  .result {
+    width: 100%;
+    height: 100%;
+  }
+  .result {
+    height: 60%;
+    min-height: 400px;
+  }
+  .summary {
+    height: 40%;
+    margin-top: 2em;
+  }
+}
